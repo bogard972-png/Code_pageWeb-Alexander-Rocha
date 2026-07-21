@@ -1,0 +1,6 @@
+# .gitigore del curso
+#Sistema operativo
+thunbs.db
+#temporales y comprimidos de trabajo
+*.tmp
+*.zip
