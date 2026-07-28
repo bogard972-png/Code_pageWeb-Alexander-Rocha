@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+
+    <meta name="descricion" content="sitio wep para el curso de codificacion de paginas wed">
+    <meta name="keywords" content="html, css, javascript, codificacion de paginas wed">
+    <meta name="author" content="Aleksandr57">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="horario de clases del sitio wed">
+    <meta name="keywords" content="horario, clases, sitio-demo">
+    <meta name="author" content="Aleksandr57">
+
+    <title>formulario | resgitro</title>
+
+</head>
+<body>
+    <header> 
+    <hl>Codificacion de paginas web</h1> <p>Sitio de demostracion del modulo</p>
+    <nav>
+          <ul>
+            <il><a href="../sitio-demo/index.html">inicio</a></il>
+            <il><a href="../sitio-demo/articulo.html">articulos</a></il>
+            <il><a href="../sitio-demo/horarios.html">horarios</a></il>
+            <il><a href="../sitio-demo/Registro.html">registro</a></il>
+          </ul>
+
+<main> 
+   <h2>formulario de matriculas</h2>
+   <form action="#">
+    <!--form: contenedor del formulario. action: es donde se envia el formulario method: es el método de envio, pos: evion de datos por el cuerpo de la soicitud-->
+    <fieldset><!--contenedor de los elementos del furmulario-->
+        <legend>informacion personal</legend><!--legend: titulo del fielset-->
+        <p>
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre required"><br><br>
+        </p>
+        <p> <label for="correo">Correo electronico:</label>
+            <input typa-"email" id="correo" name="correo" raquired> chr> <br> 
+        </p>
+        <button type="submit">envier matricula</button>
+
+    </fieldset>
+   </form>
+   <fieldset>
+     <legend>detalles de matricula</legend>
+    <p>
+     <label for="telefono">telefono:</label>
+     <input type="tel" id="telefono" name="telefono"><br><br>
+    </p>
+     <label for="fecha">fecha en inicio</label>
+     <input type="date" id="fecha" name="fecha"><br><br>
+
+      <p>
+     <label for="telefono">telefono:</label>
+     <input type="number" id="edad" name="edad"><br><br>
+    </p>
+    <fieldset>
+        <legend>Modalidad</legend> 
+        <input type="radio" id ="presencial" name= "modalidad" value="Presencial"> 
+        <label for="presencial">Presencial</label><br> 
+        <input type="radio" id="virtual" name="modalidad" value="virtual">
+        <label for="virtual">Virtual</label><br> 
+        <input type="radio" id="mixta" name="modalidad" value="mixta"> 
+        <label for="mixta">Mixta</label><br> 
+    </fieldset>
+    <p>
+        <label for="horario">horario preferido</label><br>
+        <select form="horario" name="horario">
+            <option type="radio" value="mañana" name0="modalidad">Mañana</option>: 
+            <option type="radio" value="tarde" name0="modalidad">tarde</option>:
+            <option type="radio" value="noche" name0="modalidad">Noche</option>:
+        </select>
+    </p>
+    <p>
+        <label for="comentarios">comentarios</label><br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea><br><br>
+    </p>
+   </fieldset>
+</main>
+
+            <footer>
+      <!--creditos, contacto, derechos-->
+      <p>© 2026 ina, programa desarrollo de paginas wed todos los derechos reservados</p>
+  </footer>
+    </nav>  
+</header>
+</body>
+</html>
