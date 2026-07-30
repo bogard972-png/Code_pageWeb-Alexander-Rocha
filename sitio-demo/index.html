@@ -1,42 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <metacharset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-
-    <meta name="descricion" content="sitio wep para el curso de codificacion de paginas wed">
-    <meta name="keywords" content="html, css, javascript, codificacion de paginas wed">
-    <meta name="author" content="Aleksandr57">
-
-    <link rel="icon" type="image/png" href="">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Giocoto" />
+    <meta
+      name="description"
+      content="Imagen de la galería con contenido relacionado con HTML5"
+    />
+    <meta
+      name="keywords"
+      content="Contenido HTML5, formatos w3c,imágenes de laboratorio"
+    />
+     <title>Galería / imágenes</title>
 </head>
 <body>
-   <link rel-"icon" type-"image/png" href-"recursos/homero-png-png"> ₹/head> body> 
-<header> 
-    <hl>Codificacion de paginas web</h1> <p>Sitio de demostracion del modulo</p>
-    <nav>
-          <ul>
-            <il><a href="index.html">inicio</a></il>
-            <il><a href="articulo.html">articulos</a></il>
-            <il><a href="horarios.html">horarios</a></il>
-            <il><a href="registro.html">registro</a></il>
-          </ul>
-    </nav>  
-</header>
-  <main> 
-  <!-- En el main el contenido pricipal de 1 pagina -->
-   <h2>sobre el modulo</h2>
-</main>
+    <header id="inicio">
+    <h1>Codificación de páginas web</h1>
+    <p>Sitio de demostración del módulo <abbr title="Código del módulo">CSTI12002</abbr>.</p>
 
-  <footer>
-      <!--creditos, contacto, derechos-->
-      <p>© 2026 ina, programa desarrollo de paginas wed todos los derechos reservados</p>
-  </footer>
-<!-- Enlace a otra pagina --> 
-<a href-"paginas/articulo.html">Leer</a>
-<1-- Ancla a seccion de otra pagina --> <e href-"paginas/articulo.html#origenes">Ir a articulo Primer navegador</a><br>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulo.html">Artículo</a></li>
+        <li><a href="horario.html">Horario</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="galería.html">Galería</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contenido">
+    <article>
+    <h1>Galería</h1>
+
+  <!--Imagen y sus atributos-->
+  <img src="recursos/s07-Lab01.jpg" alt="Imagen de la galería de un laboratorio de informática" width="600" height="400" />
+  <!--FIGURE: AGRUPA UN CONTENIDO CON UN Pie-->
+<figcaption>
+  <img src="recursos/lab02.jpg" alt="Imagen de la galería de un laboratorio de informática" width="600" height="400" />
+
+<figcaption>Imagen de la galería de un laboratorio de informática</figcaption>
+</figure>
+<!--VARIOS FORMATOS: el navegador elige uno-->
+<figure>
+    <picture>
+        <source srcset="recursos/lab01" type="imagen/webp">
+        <source srcset="recursos/lab02.jpg" type="imagen/jpeg">
+        <img src="recursos/lab01.jpg" alt="Imagen de la galería de un laboratorio de informática" width="800" height="500">
+    </picture>
+</figure>
+
+<!--AUDIO-->
+<section id="audio">
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="recursos/En of Line.mp3" type="audio/mpeg">
+        <source src="recursos/audio.ogg" type="audio/ogg">
+    
+         <p>Tu navegador no soporta el elemento audio.</p>
+         <a href="recursos/En or Line">controls="Descargar audio"></a>
+    </audio>
+
+    <!--VIDEO-->
+
+    <h3>Mini tutorial Capcut</h3>
+    <video controls width="800" height="500" poster="recursos/descarga (1).webp" preload="metadata">
+        <source src="recursos/video2.mp4.mp4" type="video/mp4">
+        <source src="recursos/video2.mp4.webm" type="video/webm">
+        <track src="recursos/video2.vtt" kind="subtitles" srclang="es" label="Español" default/>
+         <p>Tu navegador no soporta el elemento audio.</p>
+         <a href="recursos/video2.mp4.mp4">controls="Descargar audio"></a>
+    </video>
+
+</section>
+</article>
+  </main>
 
 </body>
+<footer>
+    <h2>Contacto</h2>
+    <address>
+      Instituto Nacional de Aprendizaje<br>
+      Correo: <a href="mailto:giocoto@ejemplo.com">giocoto@ejemplo.com</a>
+    </address>
+    <p><small>&copy: 2026 &middot: INA &middot: Todos los derechos reservados</small></p>
+  </footer>
 </html>

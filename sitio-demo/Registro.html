@@ -39,7 +39,7 @@
             <input type="text" id="nombre" name="nombre required"><br><br>
         </p>
         <p> <label for="correo">Correo electronico:</label>
-            <input typa-"email" id="correo" name="correo" raquired> chr> <br> 
+            <input typa="email" id="correo" name="correo" raquired><br> 
         </p>
         <button type="submit">envier matricula</button>
 
@@ -55,8 +55,8 @@
      <input type="date" id="fecha" name="fecha"><br><br>
 
       <p>
-     <label for="telefono">telefono:</label>
-     <input type="number" id="edad" name="edad"><br><br>
+     <label for="edad">Edad:</label>
+     <input type="number" id="edad" name="edad" min="15" max="120" step="1"><br><br>
     </p>
     <fieldset>
         <legend>Modalidad</legend> 
@@ -77,7 +77,7 @@
     </p>
     <p>
         <label for="comentarios">comentarios</label><br>
-        <textarea name="comentarios" id="comentarios" rows="4" cols="50"></textarea><br><br>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50" maxlength="200"></textarea><br><br>
     </p>
    </fieldset>
 </main>
