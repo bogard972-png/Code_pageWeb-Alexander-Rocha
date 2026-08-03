@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aleksandr57" />
+    <meta name="description" content="Artículo sobre la evolución del HTML y el estándar vivo de la WHATWG."/>
+    <meta name="keywords" content="HTML5, estándar vivo, WHATWG, W3C, historia de la web"/>
+
+    <title>Artículo | Codificación de páginas web</title>
+
+    <link rel="icon" href="recursos/favicon.png" type="image/png" />
+</head>
+<body>
+    <!-- CABECERA (Sesión 6) -->
+    <header id="inicio">
+    <h1>Codificación de páginas web</h1>
+    <p>Sitio de demostración del módulo <abbr title="Código del módulo">CSTI12002</abbr>.</p>
+
+    <nav>
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulo.html">Artículo</a></li>
+        <li><a href="horario.html">Horario</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main id="contenido">
+        <article>
+            <h1>Galeria de imagenes</h1>
+
+            <!-- Imagen y sus atributos -->
+            <img src="recursos/S.7_Lab01.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="600" height="400">
+
+            <!-- FIGURE: AGRUPA UN CONTENIDO CON UNA EXPLICACION -->
+            <figure>
+                <img src="recursos/S.7_Lab02.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="600" height="500">
+                <figcaption>Imagen de un laboratorio de informatica</figcaption>
+            </figure>
+
+
+            <!-- VARIOS FORMATOS: el navegador elige el uno -->
+            <figure>
+                <picture>
+                    <source srcset="recursos/S.7_Lab01.webp" type="image/webp" />
+                    <source srcset="recursos/S.7_Lab02.jpg" type="image/jpeg" />
+                    <img src="recursos/S. 7_Lab01. jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="800"     height="500" />
+                </picture>
+                <figcaption>Imagen de un laboratorio de informatica</figcaption>
+            </figure>
+        </article>
+
+        <!-- AUDIO -->
+        <section>
+            <h3>Audio de bienvenida</h3>
+
+            <audio controls>
+                <source src="recursos/" type="audio/mpeg">
+                <source src="recursos/" type="audio/ogg">
+                <p>Tu navegador no soporta el elemneto de audio</p>
+                <a href="recursos/"">Descargar el archivo</a>
+            </audio>
+        </section>
+        
+        <!-- VIDEO -->
+        <section id="video">
+            <h3>Mini tutorial</h3>
+
+            <video controls>
+                <source src="recursos/" type="video/mp4">
+                <source src="recursos/" type="video/webm">
+                <p>Tu navegador no soporta el elemneto de audio</p>
+                <a href="recursos/"">Descargar el archivo</a>
+            </video>
+        </section>
+        
+        <p><a href="#inicio">Volver al inicio de la pagina</a></p>
+    </main>
+
+    <footer>
+        <h2>Contacto</h2>
+        <address>
+            Instituto Nacional de Aprendizaje<br />
+            Correo: <a href="mailto:giocoto@ejemplo.com">giocoto@ejemplo.com</a>
+        </address>
+        <p>
+            <small>&copy; 2026 &middot; INA &middot; Todos los derechos reservados</small>
+        </p>
+    </footer>
+</body>
+</html>

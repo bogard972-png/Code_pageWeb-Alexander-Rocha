@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="horario de clases del sitio wed"
+    <meta name="keywords" content="horario, clases, sitio-demo"
+    <meta name="author" content="Aleksandr57"
+    <title>horario | sitio demo </title>
+</head>
+<body>
+<header> 
+    <hl>Codificacion de paginas web</h1> <p>Sitio de demostracion del modulo</p>
+    <nav>
+          <ul>
+            <il><a href="../index.html">inicio</a></il>
+            <il><a href="../articulo.html">articulos</a></il>
+            <il><a href="../horarios.html">horarios</a></il>
+            <il><a href="../registro.html">registro</a></il>
+          </ul>
+    </nav>  
+</header>
+<table>
+    <h1>horario y gía del curso</h1>
+
+    <!--lista desordenada-->
+    <h2>materiales del curso</h2>
+    <ul>
+        <li>visual studio code</li>
+        <li>cuenta de githud</li>
+        <li>cuaderno de bitácora</li>
+        <li>computadora con conexion a internet</li>
+    </ul>
+    <!--Emmet: ul>li*3-->
+
+    <hr><br>
+    <!--lista ordenada-->
+    <h2>cómo entregar una pratica</h2>
+    <!--ol>li*8-->
+    <ol slot="s">
+        <li>traer los cambios con git pull</li>
+        <li>crear la rama para la pratica con git switch -c "nombre-de-la-rama"</li>
+        <li>trabajar y hacer comits atómicios</li>
+        <li>subir la rama con git push</li>
+        <li>abrir un pull request en githud</li>
+        <li>revisar y fusionar el pull request</li>
+        <li>volver a la rama principal(main)</li>
+        <li>eliminar la rama de la pratica con git branch -d "nombre-de-la-rama"</li>
+    </ol>
+
+    <br><hr>
+    <!--esqueleto de la tabla-->
+    <h2>horario semanal</h2>
+    <thead>
+
+            <tr>
+                <th scope="col">día</th>
+                <th scope="col">modalidad</th>
+                <th scope="col">horario</th>
+                <th scope="col">contenidos</th>
+            </tr>
+
+    </thead>
+    <!--tboby cuerpo de la tabla-->
+    <tbody>
+        <tr>
+            <td>lunes</td>
+            <td>presencial</td>
+            <td>1:30pm a 5:30pm</td>
+            <td>listas y tablas</td>
+        </tr>
+    </tbody>
+    <!--El pie de la tabla-->
+    <tfoot>
+        <tr>
+            <td colspan="4">total semanal 20 horas</td>
+        </tr>
+    </tfoot>
+</table>    
+</body>
+</html>
