@@ -99,7 +99,7 @@ Portafolio-Codificación de Páginas Web/
 
 </details>
 
-<details markdown="1">
+gitmarkdown="1">
 <summary><b>Unidad 5 · Frameworks y librerías</b> (sesiones 31 a 36)</summary>
 
 | Sesión | Tema                          | Qué aprendí |      Trabajo      |     Captura      |
